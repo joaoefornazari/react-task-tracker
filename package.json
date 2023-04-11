@@ -17,7 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch db.json --port 5000"
+    "server": "json-server --watch db.json --port 5000",
+    "deploy": "aws s3 sync build/ s3://traversy-media-app.com --acl public-read"
   },
   "eslintConfig": {
     "extends": [
